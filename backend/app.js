@@ -8,7 +8,7 @@ const userAuth = require('./routes/UserAuthRoute');
 const profilePage = require('./routes/profileRoute');
 const lboardPage = require('./routes/lboardRoute');
 
-mongoose.connect('mongodb://localhost:27017/Debater', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/mern-colab', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("MongoDB database connected")
     })
