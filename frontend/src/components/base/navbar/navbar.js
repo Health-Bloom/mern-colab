@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const useStyle = makeStyles({
     tabs: {
-        color: '#FFFFFF',
+        color: 'black',
         marginRight: 20,
         textDecoration: 'none',
         fontSize: 20
@@ -17,7 +17,7 @@ const Navbar = () => {
     // const [ user, setLoginUser] = useState({});
     const classes = useStyle();
     return (
-        <AppBar position="static">
+        <AppBar position="static" color="#f3e3b7">
             <Toolbar>
                 <NavLink className={classes.tabs} to="./" exact>To-Do App</NavLink>
                 {/* { user && user._id ? 

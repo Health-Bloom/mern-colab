@@ -2,36 +2,34 @@ import React from "react";
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
+import { makeStyles } from '@mui/styles';
 
 
 import {Router,Link} from "react-router-dom";
   
-{/*const useStyle = makeStyles({
-    tabs: {
-        color: '#FFFFFF',
-        marginRight: 20,
+const useStyle = makeStyles({
+    navtabs: {
+        color: 'black',
+        paddingLeft: 10,
+        paddingRight: 10,
         textDecoration: 'none',
-        fontSize: 20
-    }
+        fontSize: 20,
+      }
 })
-*/}
 export default function HomeNav () {
+  const classes = useStyle();
    return(
-    <AppBar color="transparent" elevation={0} position="fixed">
+    <AppBar style={{
+      backgroundColor: 'bisque'
+      }} position="static" color="transparent" elevation={0} >
     <Toolbar>
      <div>
       <Button>
-         <Link to="/"> HomePage</Link>
+         <Link className={classes.navtabs} to="/"> HomePage</Link>
       </Button>
       <Button>
-         <Link to="/blogpage">BlogPage</Link>
+         <Link className={classes.navtabs} to="/blogpage">BlogPage</Link>
       </Button>
-      <Button>
-      <Link to="">FollowUp</Link>
-      </Button>
-        
-      
-
        {/*
          A <Switch> looks through all its children <Route>
          elements and renders the first one whose path

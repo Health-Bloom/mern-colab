@@ -1,4 +1,4 @@
-import history from './history.js';
+// import history from './history.js';
 import HomeNav from './components/homePage/Homenav';
 import Home from './components/homePage/Home';
 import Blog from './components/blogPage/Blog';
@@ -14,6 +14,8 @@ function App() {
     <Router>
     <div>
       <HomeNav/>
+    </div>
+    <div>
     
       <Routes>
           <Route exact path="/"  element={<Home/>}/>
