@@ -1,12 +1,27 @@
-import Home from './components/home/home.js';
-// import Navbar from './components/base/navbar/navbar.js';
+import history from './history.js';
+import HomeNav from './components/homePage/Homenav';
+import Home from './components/homePage/Home';
+import Blog from './components/blogPage/Blog';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Routes
+} from "react-router-dom";
 
 function App() {
   return (
+    <Router>
     <div>
-      {/* <Navbar /> */}
-      <Home />
+      <HomeNav/>
+    
+      <Routes>
+          <Route exact path="/"  element={<Home/>}/>
+          <Route path="blogpage" element={<Blog/>}/>
+      </Routes>
+     
     </div>
+    </Router>
   );
 }
 
