@@ -5,13 +5,15 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles({
   body:{
     display:'block',
+    marginRight:20,
+    marginLeft:20,
     height:'25vh',
-    justifyContent: 'center',
+    justifyContent: 'start',
     minWidth:'auto',
     backgroundSize:'cover'
   },
   img:{
-    display:'block',marginLeft:'auto',marginRight:'auto'
+    display:'block',marginLeft:'auto',marginRight:0
   }
 
 })
@@ -25,7 +27,7 @@ export default function Home() {
       <Typography variant="h2" align="center">
         Welcome to mern project
       </Typography>
-      <img src="https://cdn.dribbble.com/users/24158/screenshots/15572474/media/b12d296b7356cf08adc2ae9439c0aa57.jpg?compress=1&resize=700x600" className={classes.img}></img>
+      <img src="https://cdn.dribbble.com/users/24158/screenshots/15572474/media/b12d296b7356cf08adc2ae9439c0aa57.jpg?compress=1&resize=400x400" className={classes.img}></img>
     </body>
      
     );
