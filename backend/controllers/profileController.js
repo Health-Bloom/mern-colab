@@ -1,3 +1,3 @@
 module.exports.getUserProfilePage = (req, res)=> {
-    res.send('Debater');
+    res.send('mern');
 }

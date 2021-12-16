@@ -1,3 +1,3 @@
 module.exports.getLBoardPage = (req, res)=> {
-    res.send('Debater');
+    res.send('mern');
 }
